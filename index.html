@@ -3,12 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
-    <link rel="shortcut icon" href="./img/logo/logo.ico">
-    <script src="index.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="shortcut icon" href="./img/logo/logo.ico" type="image/x-icon">
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+    <script src="./js lib/bootstrap.bundle.js"></script>
     <title>Assassin's Creed</title>
 </head>
 <body>
@@ -37,14 +36,14 @@
         <div class="ass-content">
             <ul>
                 <li><a href="#ass-valhalla">VALHALLA</a></li>
-                <li><a href="">ALL GAMES</a></li>
+                <li><a href="#all-games">ALL GAMES</a></li>
             </ul>
         </div>
     </div>
     <div class="bg" >
         <img src="./img/content/ass-bg.png" alt="">
     </div>
-    <div class="overview">
+    <div class="overview" >
         <h2>Assassin's Creed Franchise</h2>
         <div>Play your way through history in the award-winning video game series. Assassin's Creed immerses you in the memories of your ancestors, fighting to protect free will at pivotal moments in human history.</div>
     </div>
@@ -57,7 +56,7 @@
         <div class="val-img"><img src="./img/content/valhalla.png" alt=""></div>
     </div>
     <div class="odyssey_origins">
-        <h2>Discover Assassin's Creed Franchise</h2>
+        <h2 id="all-games">Discover Assassin's Creed Franchise</h2>
         <div class="content-odyssey-origins">
             <div class="odyssey">
                 <img src="./img/content/Odyssey.png" alt="">
@@ -256,52 +255,193 @@
         </div>
     </div>
 
-    <div id="multi-item-example" class="carousel slide carousel-multi-item" data-ride="carousel">
-        <div class="carousel-inner" role="listbox">
+    <div class="all-games-tittle" >
+        <h2>BUY NOW</h2>
+        <p>
+            <img src="./img/logo/gamepad.png" style="width: 30px;height: 30px;">
+            <span><span>18</span> GAMES</span>
+        </p>
+    </div>
 
-            <!--First slide-->
+    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
             <div class="carousel-item active">
-    
                 <div class="row">
-                    <div class="col-md-4">
-                        <div class="card mb-2">
-                            <img class="card-img-top" src="./img/all-ac-games/ac-valhalla.jpg" alt="Card image cap">
-                            <div class="card-body">
-                                <a class="btn btn-primary">Button</a>
-                            </div>
+                    <div class="col-3">
+                        <img src="./img/all-ac-games/ac-valhalla.jpg">
+                        <div>Assassin's Creed Valhalla</div>
+                        <div>
+                            <img src="img/logo/xbox.png" style="width: 15px;height: 15px;">
+                            <img src="img/logo/windows.png" style="width: 15px;height: 15px;">
+                            <img src="img/logo/playstation.png" style="width: 15px;height: 15px;">
+                            <img src="img/logo/wii.png" style="width: 15px;height: 15px;">
                         </div>
                     </div>
-        
-                    <div class="col-md-4 clearfix d-none d-md-block">
-                        <div class="card mb-2">
-                            <img class="card-img-top" src="./img/all-ac-games/ac-the-rebel-collection.jpg" alt="Card image cap">
-                            <div class="card-body">
-                                <a class="btn btn-primary">Button</a>
+                    <div class="col-3">
+                        <img src="./img/all-ac-games/ac-the-rebel-collection.jpg">
+                        <div>Assassin's The Rebel Collection</div>
+                            <div>
+                                <img src="img/logo/xbox.png" style="width: 15px;height: 15px;">
+                                <img src="img/logo/windows.png" style="width: 15px;height: 15px;">
+                                <img src="img/logo/playstation.png" style="width: 15px;height: 15px;">
+                            </div>    
+                        </div>
+                    <div class="col-3">
+                        <img src="./img/all-ac-games/ac3_remastered.jpg">
+                        <div>Assassin's Creed III Remastered</div>
+                            <div>
+                                <img src="img/logo/xbox.png" style="width: 15px;height: 15px;">
+                                <img src="img/logo/windows.png" style="width: 15px;height: 15px;">
+                                <img src="img/logo/playstation.png" style="width: 15px;height: 15px;">
+                            </div>    
+                        </div>
+                    <div class="col-3">
+                        <img src="./img/all-ac-games/ac-rebelion.png">
+                        <div>Assassin's Creed Rebelion</div>
+                            <div>
+                                <img src="img/logo/apple-ios.png" style="width: 15px;height: 15px;">
+                                <img src="img/logo/android.png" style="width: 15px;height: 15px;">
                             </div>
                         </div>
-                    </div>
-        
-                    <div class="col-md-4 clearfix d-none d-md-block">
-                        <div class="card mb-2">
-                            <img class="card-img-top" src="./img/all-ac-games/ac3_remastered.jpg" alt="Card image cap">
-                            <div class="card-body">
-                                <a class="btn btn-primary">Button</a>
+                    <div class="col-3">
+                        <img src="./img/all-ac-games/ac-odysey.jpg">
+                        <div>Assassin's Creed Odyssey</div>
+                            <div>
+                                <img src="img/logo/xbox.png" style="width: 15px;height: 15px;">
+                                <img src="img/logo/windows.png" style="width: 15px;height: 15px;">
+                                <img src="img/logo/playstation.png" style="width: 15px;height: 15px;">
                             </div>
                         </div>
+                    <div class="col-3">
+                        <img src="./img/all-ac-games/ac-rogue-remastered.jpg">
+                        <div>Assassin's Rogue Remastered</div>
+                        <div>
+                            <img src="img/logo/xbox.png" style="width: 15px;height: 15px;">
+                            <img src="img/logo/windows.png" style="width: 15px;height: 15px;">
+                            <img src="img/logo/playstation.png" style="width: 15px;height: 15px;">
+                            <img src="img/logo/wii.png" style="width: 15px;height: 15px;">
+                        </div>
                     </div>
-
-                    
                 </div>
             </div>
-        <a class="carousel-control-prev" href="#multi-item-example" role="button" data-slide="prev">
+            <div class="carousel-item">
+                <div class="row">
+                    <div class="col-3">
+                        <img src="./img/all-ac-games/ac-origin.png">
+                        <div>Assassin's Creed Origins</div>
+                        <div>
+                            <img src="img/logo/xbox.png" style="width: 15px;height: 15px;">
+                            <img src="img/logo/windows.png" style="width: 15px;height: 15px;">
+                            <img src="img/logo/playstation.png" style="width: 15px;height: 15px;">
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <img src="./img/all-ac-games/ac-enzio-collection.jpg">
+                        <div>Assassin's Creed Enzio Collection</div>
+                        <div>
+                            <img src="img/logo/windows.png" style="width: 15px;height: 15px;">
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <img src="./img/all-ac-games/ac-chronicles.jpg">
+                        <div>Assassin's Creed Chronicles</div>
+                        <div>
+                            <img src="img/logo/xbox.png" style="width: 15px;height: 15px;">
+                            <img src="img/logo/playstation.png" style="width: 15px;height: 15px;">
+                            <img src="img/logo/wii.png" style="width: 15px;height: 15px;">
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <img src="./img/all-ac-games/ac-syndicate.jpg">
+                        <div>Assassin's Creed Syndicate</div>
+                        <div>
+                            <img src="img/logo/xbox.png" style="width: 15px;height: 15px;">
+                            <img src="img/logo/windows.png" style="width: 15px;height: 15px;">
+                            <img src="img/logo/playstation.png" style="width: 15px;height: 15px;">
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <img src="./img/all-ac-games/ac-untiy.jpg">
+                        <div>Assassin's Creed Unity</div>
+                        <div>
+                            <img src="img/logo/xbox.png" style="width: 15px;height: 15px;">
+                            <img src="img/logo/windows.png" style="width: 15px;height: 15px;">
+                            <img src="img/logo/playstation.png" style="width: 15px;height: 15px;">
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <img src="./img/all-ac-games/ac-rogue.jpg">
+                        <div>Assassin's Creed Rogue</div>
+                        <div>
+                            <img src="img/logo/windows.png" style="width: 15px;height: 15px;">
+                            <img src="img/logo/playstation.png" style="width: 15px;height: 15px;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="row">
+                    <div class="col-3">
+                        <img src="./img/all-ac-games/ac-iv-black-flag.jpg">
+                        <div>Assassin's Creed IV Black Flag</div>
+                        <div>
+                            <img src="img/logo/xbox.png" style="width: 15px;height: 15px;">
+                            <img src="img/logo/windows.png" style="width: 15px;height: 15px;">
+                            <img src="img/logo/playstation.png" style="width: 15px;height: 15px;">
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <img src="./img/all-ac-games/ac-iii.jpg">
+                        <div>Assassin's Creed III</div>
+                        <div>
+                            <img src="img/logo/xbox.png" style="width: 15px;height: 15px;">
+                            <img src="img/logo/windows.png" style="width: 15px;height: 15px;">
+                            <img src="img/logo/playstation.png" style="width: 15px;height: 15px;">
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <img src="./img/all-ac-games/ac-revelations.jpg">
+                        <div>Assassin's Creed Revelations</div>
+                        <div>
+                            <img src="img/logo/xbox.png" style="width: 15px;height: 15px;">
+                            <img src="img/logo/windows.png" style="width: 15px;height: 15px;">
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <img src="./img/all-ac-games/ac-brotherhood.jpg">
+                        <div>Assassin's Creed Brotherhood</div>
+                        <div>
+                            <img src="img/logo/xbox.png" style="width: 15px;height: 15px;">
+                            <img src="img/logo/windows.png" style="width: 15px;height: 15px;">
+                            <img src="img/logo/wii.png" style="width: 15px;height: 15px;">
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <img src="./img/all-ac-games/ac-ii.jpg">
+                        <div>Assassin's Creed II</div>
+                        <div>
+                            <img src="img/logo/windows.png" style="width: 15px;height: 15px;">
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <img src="./img/all-ac-games/ac-i.jpg">
+                        <div>Assassin's Creed</div>
+                        <div>
+                            <img src="img/logo/windows.png" style="width: 15px;height: 15px;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
           <span class="sr-only">Previous</span>
         </a>
-        <a class="carousel-control-next" href="#multi-item-example" role="button" data-slide="next">
+        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
           <span class="sr-only">Next</span>
         </a>
-    </div>
+      </div>
 
       
     <div class="footer">
