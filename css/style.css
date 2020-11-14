@@ -146,7 +146,7 @@ html{
     background-color: rgb(240, 243, 244);
     width: 40rem;
     padding: 0 5rem 3rem 2rem;
-    margin: 10rem -5rem 0 4rem;
+    margin: 10rem -5rem 0 7rem;
     height: fit-content;
     position: relative;
 }
@@ -195,8 +195,8 @@ html{
     text-align: center;
     font-size: 40px;
     font-weight: 700;
-    padding: 100px 0 50px 0;
-    margin: 10rem 0 0 0 ;
+    padding: 50px 0 50px 0;
+    margin: 10.5rem 0 0 0 ;
 }
 .content-odyssey-origins{
     display: flex;
@@ -227,10 +227,10 @@ html{
     margin: 0 0 1rem 0;
 }
 /* Visit-Buy Button */
-.buy-visit-button{
+.visit-button{
     display: flex;
 }
-.buy-visit-button div{
+.visit-button div{
     color: rgb(82, 126, 110);
     font-size: 18px;
     font-weight: 500;
@@ -241,7 +241,7 @@ html{
     cursor: pointer;
     transition: linear 100ms;
 }
-.buy-visit-button div:hover {
+.visit-button div:hover {
     color: white;
     background-color: rgb(82, 126, 110);
     border: rgb(82, 126, 110) 3px solid;
@@ -304,6 +304,7 @@ html{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-top: 2rem;
 }
 .social-contact ul{
     list-style: none;
@@ -374,22 +375,33 @@ html{
     color: white;
     margin: 3rem 5rem 0 0;
     display: flex;
-    align-items: center;
+    flex-direction: column;
 }
 .lang img{
     width: 16px;
     height: 16px;
-    padding-top: 2px;
 }
-.lang img:last-child{
+.english, .vietnamese{
+    display: flex;
+    align-items: center;
+}
+.english span{
     cursor: pointer;
-    margin-left: 5px;
+    position: relative;
+}
+
+.english span:hover .vietnamese{
+    display: block;
 }
 .lang-container{
     margin-right: 5px;
     font-weight: 500;
 }
-
+.lang button{
+    background-color: #ffffff00;
+    border: none;
+    margin: 0 0 5px 5px;
+}
 .end{
     display: block;
     background-color: rgb(29, 30, 33);
