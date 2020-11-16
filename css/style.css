@@ -73,10 +73,13 @@ html{
 
 /* CSS ASSASSIN MENU */
 .ass-menu{
+    position: sticky;
+    top: -1px;
     display: flex;
     align-items: center;
     color: white;
     background-color: rgb(42, 43, 47);
+    z-index: 2;
     
 }
 .ass-logo img{
@@ -86,6 +89,7 @@ html{
     cursor: pointer;
 }
 .ass-content{
+    
     margin: auto;
     padding-right: 5rem;
     font-size: 20px;
@@ -141,6 +145,7 @@ html{
 .valhalla{
     display: inline-flex;
     margin-top: 5rem;
+    padding-top: 4rem;
 }
 .val-content{
     background-color: rgb(240, 243, 244);
@@ -401,6 +406,15 @@ html{
     background-color: #ffffff00;
     border: none;
     margin: 0 0 5px 5px;
+}
+.rate{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 7rem;
+    right: 2rem;
 }
 .end{
     display: block;
