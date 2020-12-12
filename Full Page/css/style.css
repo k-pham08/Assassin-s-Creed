@@ -13,19 +13,76 @@ html{
 }
 /* CSS UBISOFT MENU */
 .ubisoft-menu{
+    position: relative;
+    width: 100%;
+    height: 57px;
     display: flex;
     background-color: black;
     color: white;
     justify-content: space-between;
     align-items: center;
-    
+    top: 0px;
+    z-index: 10;
 }
-
-.logo-ubisoft img{
+.logo-ubisoft{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.logo-ubisoft > img{
     height: 50px;
     width: 80px;
     margin-left: 2rem;
+    margin-right: 2rem;
     cursor: pointer;
+}
+.lang-button{
+    width: 130px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 700;
+    background-color: rgb(42, 43, 47);
+    color: white;
+    padding: 18px 10px 17px 10px;
+    border: none;
+    transition: linear 200ms;
+}
+.lang-button img:first-child{
+    width: 15px;
+    height: 15px;
+    margin-right: 5px;
+}
+.lang-button img:last-child{
+    width: 15px;
+    height: 15px;
+    margin-left: 10px;
+}
+.lang-button:focus{
+    outline: none;
+}
+#eng-button{
+    position: relative;
+    z-index: 2;
+    right: 5rem;
+}
+.active-lang{
+    transform: rotate(180deg);
+}
+#vn-button{
+    position: absolute;
+    top: 0;
+    right: 80px;
+    opacity: 0.8;
+    background-color: rgb(0,0,0);
+}
+#vn-button:hover{
+    opacity: 1;
+}
+.langdown{
+    transform: translateY(56px);
 }
 .main-menu ul{
     list-style: none;
@@ -43,31 +100,69 @@ html{
 .main-menu ul li:hover{
     opacity: 1;
 }
+
+
+
 .login{
     display: flex;
     align-items: center;
 }
-
-.search-button{
-    margin: 0 2rem 0 2rem;
-    cursor: pointer;
-    transition: linear 100ms;
+.search-area{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.search-area button{
+    background-color: #00000000;
+    border: none;
+}
+.search-area button:focus{
+    outline: none;
+}
+.search-area img{
+    width: 20px;
+}
+.search-area button{
+    margin-right: 2rem;
+}
+.search-area input{
+    position: absolute;
+    width: 45rem;
+    border: none;
+    padding: 10px 1rem 10px 1rem;
+    height: 56.8px;
+    right: 245px;
+    top: -10rem;
+    margin: auto;
+    border-radius: 10px 10px 0 0;
+    outline: none;
+    transition: all 0.5s ease-out;
+}
+.search-active{
+    transform: translateY(9rem);
 }
 .login-round{
     display: flex;
     justify-content: center;
     align-items: center;
     cursor: pointer;
+    opacity: 0.5;
+    transition: linear 100ms;
+}
+.login-round:hover{
+    opacity: 1;
 }
 .login-round div{
     padding: 0 1rem 0 5px;
-    opacity: 0.5;
     font-size: 16px;
     font-weight: 700;
     transition: linear 100ms;
 }
 .login-round img {
-    opacity: 0.5;
+    width: 22px;
+    height: 22px;
 }
 
 
@@ -91,7 +186,6 @@ html{
 .ass-content{
     
     margin: auto;
-    padding-right: 5rem;
     font-size: 20px;
     font-weight: 700;
 }
@@ -101,8 +195,8 @@ html{
     margin: auto;
 }
 .ass-content ul li{
-    padding-right: 5rem;
-    
+    padding-right: 2rem;
+    padding-left: 2rem;
 }
 .ass-content ul li a{
     text-decoration: none;
@@ -309,7 +403,6 @@ html{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-top: 2rem;
 }
 .social-contact ul{
     list-style: none;
